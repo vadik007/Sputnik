@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sputnik.Factory", "Sputnik.Factory\Sputnik.Factory.csproj", "{B2045AD6-4D94-440F-B31B-064B41B5C022}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sputnik.Temp", "Sputnik.Temp\Sputnik.Temp.csproj", "{2F568DF7-05F5-451F-97A3-FB87AD57982D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B2045AD6-4D94-440F-B31B-064B41B5C022}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2045AD6-4D94-440F-B31B-064B41B5C022}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2045AD6-4D94-440F-B31B-064B41B5C022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F568DF7-05F5-451F-97A3-FB87AD57982D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F568DF7-05F5-451F-97A3-FB87AD57982D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F568DF7-05F5-451F-97A3-FB87AD57982D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F568DF7-05F5-451F-97A3-FB87AD57982D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

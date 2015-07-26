@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Sputnik.Factory
 {
-    public class Builder:IBuilder
+    public class SputnikBuilder:IBuilder
     {
         public IBuilder AddSystem(ISystem system)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBuilder AddFuel(double amount)
         {
             throw new NotImplementedException();
         }
@@ -17,20 +22,23 @@ namespace Sputnik.Factory
     public interface IBuilder
     {
         IBuilder AddSystem(ISystem system);
-    }
 
-    public interface ISystem
-    {
-        
+        IBuilder AddFuel(double amount);
+
     }
 
     class MyClass
     {
-        void m()
+        void Test()
         {
-            new Builder()
-                .AddSystem()
-                .AddSystem()
+            new SputnikBuilder()
+                .AddSystem(new ControllModule(
+                        module => { module.IsValid()}
+                    ))
+                .AddSystem(new TemperatureControllModule())
+                .AddSystem(new PowerSupplyModule())
+                .AddFuel(50);
+
         }
     }
 }
